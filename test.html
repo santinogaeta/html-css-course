@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honest Feedback Form</title>
+  <style>
+    .header{
+      background-color: #01033b;
+      color: white;
+      position: fixed;
+      width:100%;
+      z-index: 12;
+      box-sizing: border-box;
+    }
+    .textbox{
+      display: block;
+    }
+    .button {
+      font-size: 18px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top:10px;
+      padding-bottom:10px;
+      border-radius: 5px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <!--- Contact Form --->
+  <div class="container">
+      <form>
+          <header class=header>Cotiss Honest Feedback Form</header>
+          <textarea  
+          class="textbox" id = "feedback" rows="4" placeholder="Enter Feedback" required></textarea>
+          <button class="button" type = "submit">Submit Feedback</button>
+      </form>
+  </div>
+</body>
+</html>

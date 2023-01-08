@@ -1,0 +1,57 @@
+<!--Using CSS - Cascading Style Sheets - with HTML to create different looking buttons-->
+
+<!--Can write CSS code within style element, to change appearance of other elements-->
+  <!--When targetting element to change, if starts with ".", we know to target a class name, rather than a general html element-->
+    <!--border-radius: Higher the value, rounder the corners are-->
+    <!--cursor: pointer - changes the cursor to a hand-pointer when hovering over button-->
+  <!--Spaces between elements are called Margins in CSS, eg margin-right: to create more space to the right of an element-->
+<style>
+  .subscribe-button {
+    background-color: rgb(212, 3, 3); 
+    color: white;
+    border: none;
+    height: 30px;
+    width: 85px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+
+  .join-button {
+    background-color: white;
+    color: rgb(14, 116, 156);
+    border-color: rgb(14, 116, 156);
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    height: 30px;
+    width: 50px;
+    cursor: pointer;
+  }
+
+  .tweet-button {
+    background-color: rgb(7, 165, 227); 
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    height: 30px;
+    width: 58px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+</style>
+
+<!--class attribute: Allows to label specific elements to be targetted by CSS code-->
+<button class="subscribe-button">
+  SUBSCRIBE
+</button>
+
+<button class="join-button">
+  JOIN
+</button>
+
+<button class="tweet-button">
+  Tweet
+</button>

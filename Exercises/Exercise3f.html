@@ -1,0 +1,90 @@
+<!--Buliding off Exercise 2f, adding hover transitions-->
+<!--Including background-colors, opacity-->
+
+<style>
+  .amazon-link {
+    color: rgb(5, 156, 173);
+  }
+
+  .amazon-link:hover {
+    color: orange;
+  }
+
+  .nike-line {
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  .price-line {
+    color: rgb(32, 150, 32);
+    font-weight: bold;
+  }
+
+  .cart-button {
+    background-color: rgb(215, 215, 22);
+    font-size: smaller;
+    height: 30px;
+    width: 6%;
+    border: none;
+    border-radius: 13px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s,
+      opacity 0.2s;
+  }
+
+  .cart-button:hover {
+    background-color: rgb(194, 194, 20);
+  }
+
+  .cart-button:active {
+    opacity: 0.6;
+  }
+
+  .buy-now-button {
+    background-color: rgb(227, 159, 51);
+    font-size: smaller;
+    height: 30px;
+    width: 5%;
+    border: none;
+    border-radius: 13px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s,
+      opacity 0.2s;
+  }
+
+  .buy-now-button:hover {
+    background-color: rgb(220, 138, 5);
+  }
+
+  .buy-now-button:active {
+    opacity: 0.6;
+  }
+
+</style>
+
+
+<a class="amazon-link" href="https://www.amazon.com/" target="_blank">
+  Back to Amazon
+</a>
+
+<p class="nike-line">
+  Nike Black Running Shows
+</p>
+
+<p class="price-line">
+  $39 - in stock.
+</p>
+
+<p>
+  Free delivery tomorrow.
+</p>
+
+<button class="cart-button">
+  Add to Cart
+</button>
+
+<button class="buy-now-button">
+  Buy now
+</button>

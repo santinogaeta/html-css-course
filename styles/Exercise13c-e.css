@@ -1,0 +1,72 @@
+/* Document containing stylesheet for file Exercise13c-e.html to be linked in */
+
+div {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+
+}
+
+.header {
+  color: rgb(192, 191, 191);
+  font-size: 12px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  height: 45px;
+  width: 45px;
+  border-radius: 25px;
+  object-fit: cover;
+  margin-left: 10px;
+}
+
+.details {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.subject-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.subject {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.tag {
+  font-weight: bolder;
+  font-size: 12px;
+  margin-bottom:4px;
+}
+
+.time {
+  color: rgb(192, 191, 191);
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.msg {
+  color: rgb(192, 191, 191);
+  font-size: 12px;
+}

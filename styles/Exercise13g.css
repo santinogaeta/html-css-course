@@ -1,0 +1,83 @@
+/* Document containing stylesheet for file Exercise13g.html to be linked in */
+
+div {
+  font-family: "Franklin Gothic Medium", Arial;
+}
+
+.tweet {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 450px;
+}
+
+.pic-container {
+  margin-right: 10px;
+}
+
+.profile-pic {
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.tweet-column {
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+}
+
+.name {
+  font-weight: bolder;
+}
+
+.handle {
+  color: rgb(156, 155, 155); 
+  margin-left: 5px;
+}
+
+.msg {
+  line-height: 20px;
+}
+
+.link-box {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  border: solid;
+  border-color: rgb(211, 211, 211); 
+  background-color: rgb(211, 211, 211);
+  border-radius: 20px;
+  border-width: 1px;
+}
+
+.thumbnail {
+  height: 100px;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.link-info {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  color: rgb(111, 111, 111);
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.desc {
+  margin-left: 10px;
+  line-height: 22px;
+}

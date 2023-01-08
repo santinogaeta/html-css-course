@@ -1,0 +1,61 @@
+<!--<div> (block element) : basically a container of nested elements that holds everything in a box on the web page-->
+<!--<div> (as an inline-block) : will container other elements only taking up the space it needs to on line-->
+   <!-- <div>'s are important for grouping elements together and laying them out organised on the page-->
+
+    <!--Setting widths for div's means that Block Elements: take up entire line in their container-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Youtube.com Clone</title>
+  <style>
+
+    .thumbnail {
+      width: 300px;
+      display: block;
+    }
+
+    .search-bar {
+      font-size: 20px;
+      margin-left: 12px;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .video-title {
+      width: 300px;
+    }
+
+    .video-preview {
+      display: inline-block;
+      width: 300px;
+      vertical-align: top;
+      margin-left: 10px;
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <input class="search-bar" type="text" placeholder="Search">
+
+  <div class="video-preview">
+    <img class="thumbnail" src="thumbnails/marques.webp">
+    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+    <p class="video-author">Marques Brownlee</p>
+    <p class="video-stats">3.4M views &#183; 6 months ago</p>
+  </div>
+
+  <div class="video-preview">
+    <img class="thumbnail" src="thumbnails/markiplier.webp">
+    <p class="video-title">Try Not To Laugh Challenge #9</p>
+    <p class="video-author">Markipler</p>
+    <p class="video-stats">19M views &#183; 4 years ago</p>
+  </div>
+
+</body>
+
+</html>

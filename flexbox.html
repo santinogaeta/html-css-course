@@ -1,0 +1,109 @@
+<!-- FlexBox: similiar to grid but don't have to specify the dimension of the boxes, more flexible
+  Flex-direction: row = div boxes behave like in-line boxes now, only taking up the space they need
+  If one div has more element/ needs to be taller: other boxes will maintain vertical alignment -->
+
+  <!-- Flex: 1 = unique to Flexbox that acts like width: 1fr in grid - box will take up remaining width of page
+              value can change and alter as would fr does-->
+  <!-- Can rearrange boxes easier than with grid, maintains its assigned width and adjusts accordingly-->
+  <!-- Justify-content: = determines how the elements are laid out horizontally
+                      : start = laid out starting to the left, :end = laid out starting to the right, :center = centered
+                      : space-between = creates spaces in between each box of equal size-->
+  <!-- align-items: = determines how elements are distributed vertically
+                  : stretch = extends to fill the FlexBox vertically, : start = fills only as much vertical space as they need to
+                  : end = places them at the bottom of the container, :center = centered within container -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Flexbox Practice</title>
+</head>
+
+<body style="padding-bottom: 1000px;">
+
+  <div style="
+    display: flex;
+    flex-direction: row;">
+    <div style="background-color:
+    lightblue">div1</div>
+    <div style="background-color:
+    lightpink">div2 <p>text to show vertical alignment</p></div>  
+  </div>
+
+  <div style="
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;">
+    <div style="background-color:lightblue;
+    width: 100px;">100px</div>
+    <div style="background-color:lightpink;
+    flex: 1">flex: 1 <p>text to show vertical alignment</p></div>  
+  </div>
+
+  <div style="
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;">
+    <div style="background-color:lightblue;
+    width: 100px;">100px</div>
+    <div style="background-color:lightpink;
+    flex: 1">flex: 1 <p>text to show vertical alignment</p></div>  
+    <div style="background-color:lightblue;
+    flex: 2">flex: 1 <p>text to show vertical alignment</p></div>  
+  </div>
+
+  <div style="
+    margin-top: 10px;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    display: flex;
+    flex-direction: row;">
+    <div style="background-color:lightblue;
+    width: 100px;">100px</div>
+    <div style="background-color:lightpink;
+    width: 100px;">flex: 1</div>  
+    <div style="background-color:lightblue;
+    width: 100px;">flex: 1</div>  
+  </div>
+
+  <div style="
+    margin-top: 10px;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;">
+    <div style="background-color:lightblue;
+    width: 100px;">100px</div>
+    <div style="background-color:lightpink;
+    width: 100px;">flex: 1</div>  
+    <div style="background-color:lightblue;
+    width: 100px;">flex: 1</div>  
+  </div>
+
+  <div style="
+    margin-top: 10px;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;">
+    <div style="background-color:lightblue;
+    width: 100px;">100px</div>
+    <div style="background-color:lightpink;
+    width: 100px;">flex: 1</div>  
+    <div style="background-color:lightblue;
+    width: 100px;">flex: 1</div>  
+  </div>
+
+
+</body>
+
+</html>

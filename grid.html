@@ -1,0 +1,112 @@
+<!-- Inline styles : writing CSS code inside a line of html, using 'style' attribute
+      Not really used in real-life website, but good for learning as easy to see targeted blocks here -->
+
+<!-- display : grid  =  styles the <divs> within container into a grid format
+      grid-template-columns = specify number of cols and in pixels how wide column to be
+      cols will wrap around (like example two) if there's more cols than specified
+        1fr = a unit for column grids to take up the rest of the free-space available
+        (eg 2fr = column will take up double space as it shares what is left over)
+      column-gap: __px = creates a gap between each coloum in grid
+      row-gap: __px =  creates a gap between each row of the grid-->
+      
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Grid Practice</title>
+  </head>
+  <body style="padding-bottom: 1000px">
+
+    <div style="
+      display: grid;
+      grid-template-columns: 100px 100px;
+    ">
+      <div style="background-color:lightblue">
+        div 1
+      </div>
+      <div style="background-color: lightpink">
+        div 2
+        <p>text</p>
+      </div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 100px 100px 200px;
+    ">
+      <div style="background-color:lightblue">
+        div 100px
+      </div>
+      <div style="background-color: lightpink">
+        div 100px
+        <p>text</p>
+      </div>
+      <div style="background-color:rgb(57, 59, 59)">
+        div 200px
+      </div>
+      <div style="background-color:rgb(9, 214, 169)">
+        div 200px
+      </div>
+      
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 100px 1fr;
+    ">
+      <div style="background-color:lightblue">
+        div 100px
+      </div>
+      <div style="background-color: lightpink">
+        div 1fr
+      </div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 100px 1fr 2fr;
+    ">
+      <div style="background-color:lightblue">
+        div 100px
+      </div>
+      <div style="background-color: lightpink">
+        div 1fr
+      </div>
+      <div style="background-color: rgb(17, 201, 161)">
+        div 2fr
+      </div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 40px;
+    ">
+      <div style="background-color:lightblue; height: 200px">
+        Divide
+      </div>
+      <div style="background-color: lightpink; height: 200px">
+        Grid-space
+      </div>
+      <div style="background-color: rgb(17, 201, 161); height: 200px">
+        Evenly
+      </div>
+      <div style="background-color: rgb(17, 201, 161); height: 200px">
+        Evenly
+      </div>
+      <div style="background-color:lightblue; height: 200px">
+        Divide
+      </div>
+      <div style="background-color: lightpink; height: 200px">
+        Grid-space
+      </div>
+
+    </div>
+    
+  </body>
+</html>

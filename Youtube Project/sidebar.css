@@ -1,0 +1,43 @@
+/* Document for file youtube.html to be <link> into */
+
+/* CSS Shortcuts
+   padding: top right bottom left (like a clock starting at 12) 
+   margin: top right bottom left (same as  above)
+   border: width style color - (eg border: 1px solid rgb (0, 0, 0); ) */
+
+.sidebar {
+  position: fixed;
+  top: 55px;
+  left: 0px;
+  bottom: 0px;
+  width: 70px;
+  padding-top:5px;
+  border:none;
+  background-color:  white;
+  z-index: 101;
+}
+
+.sidebar-link{
+  height: 75px;
+  transition: background-color 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background-color: rgb(239, 236, 236);
+}
+
+/* Targeting all imgs within sidebar-link */
+.sidebar-link img {
+  height: 24px;
+}
+
+.sidebar-link div {
+  font-family: Roboto, Arial;
+  font-size: 10px;
+  margin-top: 5px;
+}

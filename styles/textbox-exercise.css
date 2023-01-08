@@ -1,0 +1,86 @@
+/* Document containing CSS code for TextboxExercise.html file to be <link>/<img src> in */
+
+p {
+  font-size: 14px;
+  color: grey;
+  font-family: Arial;
+  margin-bottom: 0px;
+}
+
+.Ex7d {
+  font-size: 20px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: rgb(211, 210, 210);
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+.Ex7e {
+  font-size: 15px;
+  width: 500px;
+  border-style: solid;
+  border-color: rgb(211, 210, 210);
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 40px;
+}
+
+.Ex7fTextbox {
+  font-size: 18px;
+  width: 350px;
+  border-style: solid;
+  border-color: rgb(22, 22, 22);
+  border-radius: 3px;
+  margin-top: 10px;
+  border-width: 1px;
+}
+
+.Ex7fBtn {
+  width: 350px;
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(35, 100, 197);
+  border: none;
+  border-radius: 25px;
+  margin-bottom: 40px;
+}
+
+.Ex7gBruno {
+  height: 50px;
+  width: 50px;
+  object-fit:cover;
+  object-position: right;
+  border-radius: 100px;
+  vertical-align: middle;
+}
+
+.Ex7gTweetbar {
+  border: none;
+  font-size: 18px;
+  vertical-align: middle;
+  width: 250px;
+}
+
+.Ex7gBtn {
+  background-color: rgb(29,155,240); 
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 15px;
+  cursor: pointer;
+  vertical-align: middle;
+}

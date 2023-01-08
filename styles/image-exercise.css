@@ -1,0 +1,29 @@
+/* Document containing CSS code for ImageExercise.hmtml file to be <img src> */
+
+/* When specifying only either width or height, the corresponding dimension will auto-calibrate
+  When both width and height are specified, image can be warpped:
+    'object-fit:cover' : will cut the rest of image that doesn't fit in specified dimensions
+    'object-fit:contain' : will change dimensions to retain shape and be contained within a
+      space specified by the dimensions.
+    'object-position' : shifts the image if entire image doesn't fit within specified dimensions
+*/
+
+.bruno1 {
+  width: 200px;
+  border-radius: 20px; 
+}
+
+.bruno2 {
+  height: 200px;
+  width: 200px;
+  object-fit:cover;
+  object-position: right;
+}
+
+.bruno3 {
+  height: 200px;
+  width: 200px;
+  object-fit:cover;
+  object-position: right;
+  border-radius: 100px;
+}

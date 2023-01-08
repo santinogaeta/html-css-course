@@ -1,0 +1,46 @@
+<!--3 Basic types of Html elements: 
+  block element : An element that takes up the entire line (eg. <p> Paragraph)
+  inline-block element : Only takes as much space as it needs (eg. <input> or <img>)
+        so another element may appear beside them.
+  inline element : text elements that appear within a line of text (eg. <strong> or <u>)
+-->
+
+<!--Can use CSS property 'display' to switch between black and inline-block elements
+    eg. display: inline-block; or display: block;-->
+<!--CSS syntax: if some CSS code applies to more than one class, use comma to apply to both-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Youtube.com Clone</title>
+  <style>
+
+    .thumbnail {
+      width: 300px;
+      display: block;
+    }
+
+    .search-bar {
+      font-size: 20px;
+      margin-left: 12px;
+      display: block;
+    }
+
+    .video-title {
+      width: 300px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <input class="search-bar" type="text" placeholder="Search">
+  <img class="thumbnail" src="thumbnails/marques.webp">
+  <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+  <p class="video-author">Marques Brownlee</p>
+  <p class="video-stats">3.4M views &#183; 6 months ago</p>
+</body>
+
+</html>

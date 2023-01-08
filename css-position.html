@@ -1,0 +1,91 @@
+<!--postion: static - default option where element stays in its place on the page
+    position: fixed - element sticks in position as scroll on webpage, but doesn't take actual position on page-->
+<!--top: 0px - determines the distance from bottom of browser window to top of element
+    left: ~px - distance from element to left of the browser window
+    If both left/right or top/bottom are stated, element will stretch to satisfy both parameters
+    -Can also use height or width to resize the fixed element to not resize with page-->
+<!--To account for Header covering the elements on top of page, we add padding-top to Body element-->
+
+<!--position: absolute - rather than fixing position on broswer window, fixes to WEBPAGE itself-->
+<!-- z-index: ~ - can override which elements are on top of others
+              Elements with HIGHER z-indexes will appear in front of elements with lower z-indexes (default 0)-->
+              
+<!--Whenever a ABSOLUTE-Element is placed in a FIXED-element, the absolute-position is RELATIVE to the Fixed-element-->
+<!--Can do the same with position: relative - so that ABSOLUTE elements are placed relative to the RELATIVE-element-->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>CSS Positon Practice</title>
+  </head>
+  <body style="
+  height: 3000px;
+  padding-top: 35px;
+  padding-left: 65px;">
+
+    <div style="
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 30px;
+    z-index: 1;">Header</div>
+
+    <div style="
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+    position: static;">div1</div>
+
+    <div style="
+    background-color: lightpink;
+    height: 200px;
+    width: 200px;
+    position: relative;">
+    div2
+    <div style="
+    position: absolute;
+    background-color: black;
+    color: white;
+    bottom: 10px;
+    right: 10px;">14:59</div>
+    </div>
+
+    <div style="
+    background-color: green;
+    color: white;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    top: 30px;
+    width: 70px;
+    ">
+      Sidebar
+      <div style="
+    position: absolute;
+    background-color: red;
+    color: white;
+    top: 100px;
+    right: 5px;">Absolute</div>
+
+    <div style="
+    position: absolute;
+    background-color: red;
+    color: white;
+    top: 0px;
+    right: 0px;">X</div>
+
+    </div>
+
+    <div style="
+    position: absolute;
+    background-color: red;
+    color: white;
+    top: 100px;
+    right: 10px;">Absolute</div>
+
+  </body>
+</html>

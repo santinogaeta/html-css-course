@@ -1,0 +1,63 @@
+/* Document to import stylesheet to Exercise11d.html using grids*/
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 175px 175px 175px;
+  column-gap: 20px;
+}
+
+.bruno-preview9f,
+.manis-preview9f,
+.sadboi-preview9f {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  vertical-align: top;
+}
+.profile-pic {
+  width: 175px;
+  height: 200px;
+  object-fit: cover;
+}
+.info {
+  padding-left: 5px;
+}
+.name {
+  font-family: Arial;
+  font-weight: bold;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+.mutual-grid{
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  column-gap: 5px;
+}
+.mutual-friend{
+  width: 25px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.friends {
+  color: rgb(150, 150, 150);
+  margin-top: 4px;
+  margin-bottom: 4px;
+  vertical-align: center;
+}
+.add-friend {
+  color: white;
+  background-color: rgb(19, 126, 232);
+  border: solid;
+  border-radius: 5px;
+  font-size: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  cursor: pointer;
+  transition: opacity 0.4s;
+}
+.add-friend:hover {
+  opacity: 0.7;
+}
+.add-friend:active{
+  opacity: 0.4;
+}

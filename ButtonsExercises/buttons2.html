@@ -1,0 +1,88 @@
+<!--Expanding on buttons.html to practice Hovers, Transitions and Shadows-->
+
+<!--Base CSS class: How button appears normally-->
+  <!--"Transition": First value is what you're targetting, second value is how long it takes to transition-->
+  <!--Can do multiple transition targetting separating values with a comma-->
+  <!--"box-shadow: vertical pos, horizontal pos, blur, color" [Don't need commas between values]-->
+    <!--Can also use rgba - where 'a' represents the opacity(0 - more transparent, 1  - pure colour)-->
+<!--"Hover" CSS pseudo-class: How button appears when cursor hovers over button-->
+<!--"Active" CSS pseudo-class: How button appears while cursor is clicked on button-->
+  <!--Opacity: Value between 0 - 1 (1 completely normal, closer to 0 = more faded)-->
+
+
+<style>
+  .subscribe-button {
+    background-color: rgb(212, 3, 3); 
+    color: white;
+    border: none;
+    height: 30px;
+    width: 85px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.2s;
+  }
+
+  .subscribe-button:hover {
+    opacity: 0.65;
+  }
+
+  .subscribe-button:active{
+    opacity: 0.4;
+  }
+
+  .join-button {
+    background-color: white;
+    color: rgb(14, 116, 156);
+    border-color: rgb(14, 116, 156);
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    height: 30px;
+    width: 50px;
+    cursor: pointer;
+    transition: background-color 0.2s,
+      color 0.2s;
+
+  }
+
+  .join-button:hover {
+    background-color: rgb(14, 116, 156);
+    color: white;
+  }
+
+  .join-button:active {
+    opacity: 0.7;
+  }
+
+  .tweet-button {
+    background-color: rgb(7, 165, 227); 
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    height: 30px;
+    width: 58px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: box-shadow 0.15s;
+  }
+
+  .tweet-button:hover {
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+  }
+</style>
+
+<!--class attribute: Allows to label specific elements to be targetted by CSS code-->
+<button class="subscribe-button">
+  SUBSCRIBE
+</button>
+
+<button class="join-button">
+  JOIN
+</button>
+
+<button class="tweet-button">
+  Tweet
+</button>

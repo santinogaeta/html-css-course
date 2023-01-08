@@ -1,0 +1,154 @@
+/* Document containing CSS code for divExercise.html file to be <link>/<img src> in */
+
+.Ex9a {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.Ex9b {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+
+.Ex9c {
+  width: 250px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb (150, 150, 150);
+  padding-left: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.message {
+  font-family: Arial;
+}
+.btn {
+  background-color: rgb(245, 242, 242);
+  border: solid;
+  border-color: rgb(150, 150, 150);
+  border-width: 1px;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+.btn:active {
+  opacity: 0.3;
+}
+
+.Ex9d {
+  background-color: rgb(21, 21, 21);
+  border: none;
+  width: 350px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+.title {
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 22px;
+  color: white;
+  margin-bottom: 0px;
+}
+.desc {
+  color:rgb(150, 150, 150)
+}
+
+.tweet-box9e{ 
+  border-radius: 5px;
+  border: none;
+  width: 400px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+}
+.Ex9eBruno {
+  height: 50px;
+  width: 50px;
+  object-fit:cover;
+  object-position: right;
+  border-radius: 100px;
+  vertical-align: middle;
+}
+.Ex9eTweetbar {
+  border: none;
+  font-size: 18px;
+  vertical-align: middle;
+  width: 250px;
+}
+.Ex9eBtn {
+  background-color: rgb(29,155,240); 
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 15px;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: opacity 0.4s;
+}
+.Ex9eBtn:hover {
+  opacity: 0.7;
+}
+.Ex9eBtn:active{
+  opacity: 0.4;
+}
+
+.bruno-preview9f,
+.manis-preview9f,
+.sadboi-preview9f {
+  margin-left: 20px;
+  display: inline-block;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.profile-pic {
+  width: 175px;
+  height: 200px;
+  object-fit: cover;
+}
+.name {
+  font-family: Arial;
+  font-weight: bold;
+  padding-left: 5px;
+  margin-bottom: 0px;
+}
+.friends {
+  color: rgb(150, 150, 150);
+  padding-left: 5px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.add-friend {
+  color: white;
+  background-color: rgb(19, 126, 232);
+  border: solid;
+  border-radius: 5px;
+  font-size: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  cursor: pointer;
+  transition: opacity 0.4s;
+}
+.add-friend:hover {
+  opacity: 0.7;
+}
+.add-friend:active{
+  opacity: 0.4;
+}

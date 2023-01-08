@@ -1,0 +1,21 @@
+/* Document for file youtube.html to be <link> into */
+
+/* CSS Shortcuts
+   padding: top right bottom left (like a clock starting at 12) 
+   margin: top right bottom left (same as  above)
+   border: width style color - (eg border: 1px solid rgb (0, 0, 0); ) */
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+body {
+  margin: 0;
+  height: 3000px;
+  padding-top: 80px;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: rgb(251, 251, 251);
+  font-family: Roboto, Arial;
+}
