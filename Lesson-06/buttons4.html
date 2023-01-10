@@ -1,0 +1,35 @@
+<!--Updating buttons to follow HTML Structure to enable Live Server updating-->
+<!--Since buttons show up on the page, they go in the <body> segments-->
+<!--Since CSS changes the appearance of the buttons, but doesn't show up on the web page
+        this is a good example of what goes in the <head> segment-->
+  <!--Using html structure allows us to separate CSS code form the HTML code-->
+  <!--Using the 'Void Element' (doesn't need a closing tag) <link> to load in CSS code
+        from another file-->
+    <!-- Attribute 'rel' (relation) tells <link> what type of information we're loading in-->
+      <!--'stylesheet' : loading CSS code to style heml elements-->
+    <!-- Attribute 'href' will indicate the path to of file to reference to load the data-->
+      <!--If file is not in same folder, must indicate path [folder]/[file]-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Buttons Practice</title>
+    <link rel="stylesheet" href="styles/buttons.css">
+</head>
+
+<body>
+  <button class="subscribe-button">
+    SUBSCRIBE
+  </button>
+
+  <button class="join-button">
+    JOIN
+  </button>
+
+  <button class="tweet-button">
+    Tweet
+  </button>
+</body>
+
+</html>
